@@ -2574,12 +2574,12 @@ $$('#toclist a').forEach(a => a.onclick = () => {
 
   // tahap: 0 putih · 1 satu warna + judul · 2 batang gelap · 3 hijau-merah · 4 zoom Malut · 5..10 data deret waktu & investasi
   let lastS2 = 0, s2 = 0, ext = 0, shown = -1, pshown = -1;
-  const TOUR = 6, TOUR2 = 7, EXTMAX = 16;   // tahap 6 = pertanyaan pariwisata (memakai peta tahap 5)
+  const TOUR = -1, TOUR2 = -1, EXTMAX = 14;   // tahap 6 = pertanyaan pariwisata (memakai peta tahap 5)
   const MAX = 14;
 
   function apply() {
-    s2 = ext <= 5 ? ext : ext <= TOUR2 ? 5 : ext - 2;
-    const tour = ext === TOUR || ext === TOUR2;
+    s2 = ext;
+    const tour = false;   // tahap pariwisata dihapus
     const zoom = (s2 >= 4 && s2 <= 13);
     const data = false;
     if (s2 !== 9) s9Played = false;
