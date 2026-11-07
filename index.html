@@ -459,6 +459,14 @@ body.sum #nav{opacity:1}
 .dx-t td.s1{background:#E8EEF7}.dx-t td.s2{background:#FBE5E3}.dx-t td.s3{background:#E1F3F1}
 .dx-t em{font-style:italic}
 .toc-h small{display:block;font-size:17px;font-weight:700;color:var(--c);margin-bottom:8px;letter-spacing:.01em}
+/* Tim penyusun (minimalis) */
+.tm-rule{width:72px;height:3px;background:var(--gold);margin:26px 0 0;border-radius:2px}
+.tm-grid{display:grid;grid-template-columns:repeat(4,1fr);column-gap:56px;row-gap:72px;margin-top:84px}
+.tm-it{position:relative;padding-top:22px;border-top:1px solid rgba(255,255,255,.18)}
+.tm-it i{display:block;font-style:normal;font-size:18px;font-weight:700;letter-spacing:.22em;color:var(--gold);margin-bottom:22px}
+.tm-it b{display:block;font-size:31px;font-weight:700;line-height:1.2;color:#fff;letter-spacing:-.005em}
+.tm-it b span{display:block;min-height:26px;margin-top:6px;font-size:20px;font-weight:500;color:rgba(255,255,255,.62);letter-spacing:.04em}
+.tm-it p{margin-top:18px;font-size:19px;line-height:1.5;color:rgba(255,255,255,.6)}
 /* Ilustrasi pilihan intervensi + matriks integrasi */
 .ii-top{display:grid;grid-template-columns:1fr 520px;gap:24px;margin-top:22px}
 .ii-rec{position:relative;border-radius:24px;padding:24px 32px;color:#fff;background:linear-gradient(135deg,#18364B 0%,#101C2C 100%);box-shadow:0 16px 36px rgba(16,28,44,.28);display:grid;grid-template-columns:96px 1fr;column-gap:26px;align-items:center;height:268px}
@@ -920,6 +928,61 @@ body.sum #nav{opacity:1}
     <div style="margin-top:34px;font-size:18px;color:#8FA3B5;font-weight:600;letter-spacing:.04em">Kementerian PPN/Bappenas · November 2026</div>
   </div>
 </section>
+
+<!-- TIM PENYUSUN -->
+<section class="s dark" data-title="Tim Penyusun">
+  <img src="assets/photos/halmahera.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.32">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,28,44,.97) 0%,rgba(16,28,44,.9) 55%,rgba(16,28,44,.8) 100%)"></div>
+  <div style="position:relative">
+    <div class="kick">Kelompok 4 · Angkatan 3 · Kelas A</div>
+    <h2 style="font-size:64px;font-weight:800">Tim Penyusun</h2>
+    <div class="tm-rule rv" style="--d:.1"></div>
+    <div class="tm-grid">
+      <div class="tm-it rv" style="--d:0.15">
+        <i>01</i>
+        <b>Febyana Ramadhanti<span></span></b>
+        <p>Pusat Sistem, Data, dan Informasi Perencanaan Pembangunan</p>
+      </div>
+      <div class="tm-it rv" style="--d:0.22">
+        <i>02</i>
+        <b>Athiyyah Fahria Dewi<span>S.Si.</span></b>
+        <p>Direktorat Kemandirian Sosial dan Ekonomi</p>
+      </div>
+      <div class="tm-it rv" style="--d:0.29">
+        <i>03</i>
+        <b>Tiara Esy Pramukti<span>S.Si.</span></b>
+        <p>Direktorat Konektivitas dan Infrastruktur Logistik</p>
+      </div>
+      <div class="tm-it rv" style="--d:0.36">
+        <i>04</i>
+        <b>Rima Riyanto<span>S.E.</span></b>
+        <p>Direktorat Industri, Perdagangan, dan Peningkatan Investasi</p>
+      </div>
+      <div class="tm-it rv" style="--d:0.43">
+        <i>05</i>
+        <b>Yanuar Wachyudi<span>S.Si.</span></b>
+        <p>Direktorat Perumahan dan Infrastruktur Kawasan Permukiman</p>
+      </div>
+      <div class="tm-it rv" style="--d:0.50">
+        <i>06</i>
+        <b>Rani Desi Yanti<span>S.M.</span></b>
+        <p>Direktorat Transmisi, Ketenagalistrikan, Kedirgantaraan, dan Antariksa</p>
+      </div>
+      <div class="tm-it rv" style="--d:0.57">
+        <i>07</i>
+        <b>Rahmat Qodri<span>S.Stat.</span></b>
+        <p>Direktorat Pendidikan Tinggi, Ilmu Pengetahuan, dan Teknologi</p>
+      </div>
+      <div class="tm-it rv" style="--d:0.64">
+        <i>08</i>
+        <b>Muhammad Zidan Eka Atmaja<span>S.Stat.</span></b>
+        <p>Pusat Sistem, Data, dan Informasi Perencanaan Pembangunan</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="src"></span><span class="pn"></span></div>
+</section>
+
 
 <!-- 02 PERTUMBUHAN 2024 -->
 <section class="s light" data-title="Pertumbuhan Ekonomi 2024 per Provinsi">
@@ -2062,6 +2125,7 @@ if ($('#tl')) {
 
 /* ---------- 11. NAVIGATION & RESIZE ---------- */
 const S = $$('.s');
+const DS = S.findIndex(s => s.dataset.title && s.dataset.title.startsWith('Pertumbuhan Ekonomi'));
 S.forEach(sec => { if (sec.querySelector('img[src$="bappenas.png"]')) return; const d = document.createElement('div'); d.className = 'toplogo'; d.innerHTML = '<img src="assets/bappenas.png" alt="Kementerian PPN/Bappenas" style="height:38px"><i></i><img src="assets/berakhlak.png" alt="BerAKHLAK" style="height:30px"><i></i><img src="assets/emas2045.png" alt="Indonesia Emas 2045" style="height:30px">'; sec.appendChild(d); });
 const stage = $('#stage');
 let cur = 0;
@@ -2079,8 +2143,8 @@ function fit() {
 
 function go(i, force) {
   const t = Math.max(0, Math.min(S.length - 1, i));
-  if (!force && cur === 1 && t > 1 && window.s2Pending && window.s2Pending()) { window.s2Advance(); return; }
-  if (!force && cur === 1 && i === 0 && window.s2CanBack && window.s2CanBack()) { window.s2Back(); return; }
+  if (!force && cur === DS && t > DS && window.s2Pending && window.s2Pending()) { window.s2Advance(); return; }
+  if (!force && cur === DS && i === DS - 1 && window.s2CanBack && window.s2CanBack()) { window.s2Back(); return; }
   cur = t;
   S.forEach((s, j) => {
     s.classList.toggle('on', j === cur);
@@ -2933,14 +2997,14 @@ $$('#toclist a').forEach(a => a.onclick = () => {
       if (kk && K[s2]) kk.textContent = tour ? 'Kondisi terkini · Apa penggerak PDRB?' : K[s2];
       if (sr && S[s2]) sr.textContent = tour ? (ext === TOUR2 ? 'Foto: Wikimedia Commons (lisensi Creative Commons). Kontribusi akomodasi dan makan minum hanya 0,8% PDRB 2024 (BPS).' : 'Foto: Wikimedia Commons (lisensi Creative Commons).') : S[s2];
     }
-    hint.textContent = ext < EXTMAX ? 'Klik atau → untuk melanjutkan · S: langsung ke slide 3' : 'Lanjut ke slide berikutnya →';
+    hint.textContent = ext < EXTMAX ? 'Klik atau → untuk melanjutkan · S: langsung ke slide ' + (DS + 2) + '' : 'Lanjut ke slide berikutnya →';
   }
   // dipakai go(): tahan pindah ke slide 3 sampai tahap selesai
   window.s2Pending = () => ext < EXTMAX;
   window.s2Advance = () => { ext++; apply(); };
   window.s2CanBack = () => ext > 0;
   window.s2Back = () => { if (ext > 0) { ext--; apply(); } };
-  S[1].addEventListener('click', () => { if (cur === 1 && ext < EXTMAX) window.s2Advance(); });
+  S[DS].addEventListener('click', () => { if (cur === DS && ext < EXTMAX) window.s2Advance(); });
   apply();
 })();
 
@@ -2961,7 +3025,7 @@ addEventListener('keydown', e => {
   const k = e.key;
   if (['ArrowRight', 'PageDown', ' '].includes(k)) { e.preventDefault(); go(cur + 1); }
   else if (['ArrowLeft', 'PageUp'].includes(k)) { e.preventDefault(); go(cur - 1); }
-  else if ((k === 's' || k === 'S') && cur === 1) go(2, true); // lompat langsung dari slide 2 ke slide 3
+  else if ((k === 's' || k === 'S') && cur === DS) go(DS + 1, true); // lompat langsung dari slide 2 ke slide 3
   else if (k === 'Home') go(0);
   else if (k === 'End') go(S.length - 1);
   else if (k === 'f' || k === 'F') full();
