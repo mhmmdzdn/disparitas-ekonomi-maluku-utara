@@ -9,6 +9,8 @@ scratch/
 Thumbs.db
 .vscode/
 .idea/
+~$*
+*.tmp
 
 # Python cache
 __pycache__/

@@ -159,7 +159,7 @@ table.sc tr:hover td{background:inherit}
 @media (max-width:900px) and (orientation:portrait){
   #rotHint{position:fixed;left:10px;right:10px;top:10px;z-index:80;display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:rgba(217,164,65,.96);color:#101C2C;font:700 13px/1.35 var(--font);box-shadow:0 8px 24px rgba(0,0,0,.35)}
   #rotHint svg{flex:none}
-  #rotHint button{margin-left:auto;flex:none;border:0;border-radius:8px;background:#101C2C;color:#fff;font:700 12px var(--font);padding:6px 10px}
+  #rotHint button{margin-left:6px;flex:none;border:0;border-radius:8px;background:#101C2C;color:#fff;font:700 12px var(--font);padding:6px 10px}
   #rotHint.hide{display:none}
 }
 /* nav */
@@ -437,6 +437,27 @@ body.sum #nav{opacity:1}
 .kf-s i b{color:var(--c)}
 .kf-chip{display:inline-block;background:#fff;border:2px solid var(--c);color:var(--c);font-weight:800;border-radius:9px;padding:0 9px;font-size:14.5px;line-height:1.45;margin:0 6px 3px 0;white-space:nowrap}
 .kf-arr{flex:none;width:40px;display:flex;align-items:center;justify-content:center}
+/* grafik tahap lanjut: diperbesar */
+.idn-bpanel.stk .st-name{font-size:22px}
+.idn-bpanel.stk .st-bar span{font-size:17px}
+.idn-bpanel.stk .st-leg{font-size:20px;margin:4px 0 12px}
+.idn-bpanel.stk .idn-bhead{font-size:28px}
+.idn-bpanel.stk .st-row{margin:0 0 6px}
+.co-sm .co-tx{padding:14px 22px;gap:6px}.co-sm .co-ic{display:none}.co-sm .co-t{font-size:22px}.co-sm .co-d{font-size:17px;line-height:1.38}
+/* ToC diagnosis (daftar) dan tabel asumsi-risiko-respons */
+.dx-list{margin-top:30px;display:flex;flex-direction:column;gap:20px}
+.dx-row{display:flex;align-items:center;gap:30px;height:168px;padding:0 40px;background:#fff;border:1px solid #E3E8ED;border-left:12px solid var(--c);border-radius:22px;box-shadow:0 12px 28px rgba(23,40,59,.08)}
+.dx-row b{flex:none;width:76px;height:76px;border-radius:50%;background:var(--c);color:#fff;font-size:36px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(23,40,59,.2)}
+.dx-row h3{font-size:34px;line-height:1.25;color:var(--c);font-weight:800}
+.dx-row p{margin-top:8px;font-size:26px;line-height:1.45;color:#3F5368}
+.dx-t{width:100%;margin-top:34px;table-layout:fixed;border-collapse:separate;border-spacing:0;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 14px 32px rgba(23,40,59,.1);border:1px solid #D9E2EB}
+.dx-t th{color:#fff;font-weight:800;font-size:26px;line-height:1.25;text-align:center;padding:20px 14px;text-transform:none;letter-spacing:0;white-space:normal;cursor:default}
+.dx-t th small{display:block;margin-top:4px;font-size:20px;font-weight:600;opacity:.92}
+.dx-t th.h0,.dx-t th.h1{background:#18364B}.dx-t th.h2{background:#C0392B}.dx-t th.h3{background:#0E7C86}
+.dx-t td{height:156px;padding:16px 24px;font-size:23px;line-height:1.42;text-align:left;vertical-align:middle;color:#2B3E52;border-top:1px solid #E3EAF1;border-right:1px solid #fff}
+.dx-t td.s0{background:#F4F7FA;font-weight:800;color:#18364B;font-size:24px}
+.dx-t td.s1{background:#E8EEF7}.dx-t td.s2{background:#FBE5E3}.dx-t td.s3{background:#E1F3F1}
+.dx-t em{font-style:italic}
 /* Ilustrasi pilihan intervensi + matriks integrasi */
 .ii-top{display:grid;grid-template-columns:1fr 520px;gap:24px;margin-top:22px}
 .ii-rec{position:relative;border-radius:24px;padding:24px 32px;color:#fff;background:linear-gradient(135deg,#18364B 0%,#101C2C 100%);box-shadow:0 16px 36px rgba(16,28,44,.28);display:grid;grid-template-columns:96px 1fr;column-gap:26px;align-items:center;height:268px}
@@ -523,7 +544,7 @@ body.sum #nav{opacity:1}
 .pic{color:#DDE4E9;line-height:0}
 .pic.on{color:var(--c)}
 .pic svg{width:100%;height:auto;display:block}
-.idn-bpanel.stk{height:665px}
+.idn-bpanel.stk{height:752px}
 .idn-bpanel.vw{left:0;width:1680px;top:52px}
 .idn-bpanel.hide13{display:none}
 .idn-bpanel.rank{top:108px}
@@ -633,7 +654,7 @@ body.sum #nav{opacity:1}
 .ev-nm small{font-size:30px;font-weight:700;letter-spacing:.04em}
 .ev-claim{background:#FDF1F0;border:1px solid #F3C9C6;border-radius:20px;padding:20px 26px;font-size:21px;line-height:1.45;color:#3A2325;box-shadow:0 12px 26px rgba(198,40,40,.12)}
 .ev-claim b{color:#C62828}
-.idn-sank{position:absolute;left:120px;top:110px;width:1680px;display:none}
+.idn-sank{position:absolute;left:120px;top:48px;width:1680px;display:none}
 .idn-sank.show{display:block}
 @keyframes skw{from{width:0}to{width:1680px}}
 @keyframes skf{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -965,7 +986,7 @@ body.sum #nav{opacity:1}
       </div>
 
       <div style="background:linear-gradient(180deg,#FFFFFF,#F4F7FA);border:1px solid #E3E8ED;border-radius:20px;padding:30px 26px;display:flex;align-items:center;gap:20px;box-shadow:0 8px 22px rgba(23,40,59,.07)">
-        <span style="font-size:44px;font-weight:800;font-style:italic;color:var(--lnavy);flex:none">IW =</span>
+        <span style="font-size:40px;font-weight:800;font-style:italic;color:var(--lnavy);flex:none">IW =</span>
         <div style="flex:1;text-align:center;color:var(--lnavy)">
           <div style="display:flex;align-items:flex-end;justify-content:center;font-size:36px;padding-bottom:16px;border-bottom:3px solid var(--lnavy)">
             <span style="font-size:60px;line-height:.9;margin-right:2px">&radic;</span>
@@ -973,7 +994,7 @@ body.sum #nav{opacity:1}
           </div>
           <div style="font-size:42px;padding-top:12px"><span style="text-decoration:overline;text-decoration-thickness:2px">Y</span></div>
         </div>
-        <span style="flex:none;font-size:48px;font-weight:800;color:#A62E22;background:#FBE9E5;border-radius:16px;padding:8px 18px">= 0,62</span>
+        <div style="flex:none;width:236px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;background:#92D050;color:#17283B;border-radius:12px;padding:6px 14px;font-weight:800"><span style="font-size:19px">IW 2023</span><span style="font-size:30px">1,33</span></div><div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;background:#FFFF00;color:#17283B;border-radius:12px;padding:6px 14px;font-weight:800"><span style="font-size:19px">IW 2024</span><span style="font-size:30px">1,41</span></div><div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;background:#FFC000;color:#17283B;border-radius:12px;padding:6px 14px;font-weight:800"><span style="font-size:19px">IW 2025</span><span style="font-size:30px">1,42</span></div></div>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:16px;margin-top:24px">
@@ -1168,7 +1189,7 @@ body.sum #nav{opacity:1}
     <div class="toc-card rv" data-n="3" style="--d:.45;--c:#2F7A66;--bg:#E9F3EF">
       <div class="toc-top"><span class="toc-ic"><svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.6-6-10.5A6 6 0 0 1 18 10.5C18 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/></svg></span><span class="toc-num">3</span></div>
       <div class="toc-h">Investasi, teknologi &amp; tenaga kerja lokal</div>
-      <div class="toc-res"><span>→</span>PDRB per kapita kabupaten/kota tumbuh</div>
+      <div class="toc-res"><span>→</span>PMA/PMDN pada sektor unggulan</div>
       <div class="toc-d">Investasi baru, teknologi dan mesin yang lebih maju, serta tenaga kerja lokal yang terserap meningkatkan kapasitas produksi dan pendapatan daerah.</div>
     </div>
     <div class="toc-arr rv" style="--d:.6"><b><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></b></div>
@@ -1182,48 +1203,34 @@ body.sum #nav{opacity:1}
   <div class="foot"><span class="src">Disparitas Ekonomi Maluku Utara 2026</span><span class="pn"></span></div>
 </section>
 
-<!-- 07c TOC: KETIKA KETIMPANGAN BELUM MENURUN -->
+<!-- 07c TOC: KETIKA KETIMPANGAN BELUM MENURUN (diagnosis) -->
 <section class="s light" data-title="ToC: Ketika Ketimpangan Ekonomi Belum Menurun">
   <div class="kick">Theory of Change</div>
   <h2 style="max-width:1680px;font-size:50px">ToC: Ketika Ketimpangan Ekonomi Belum Menurun.</h2>
   <p class="toc-lead rv" style="--d:.05">Jangan langsung menambah kegiatan. Cari bagian yang <b style="color:#B03A2E">terhambat</b>.</p>
-  <div class="dg">
-    <div class="dg-row dg-hd rv" style="--d:.1">
-      <div style="background:#18364B">Sambungan</div>
-      <div style="background:#A9790F">Diagnosis<small>jika hasil belum muncul</small></div>
-      <div style="background:#18364B">Asumsi<small>syarat agar berjalan</small></div>
-      <div style="background:#C0392B">Risiko<small>jika asumsi tidak terpenuhi</small></div>
-      <div style="background:#0E7C86">Respons<small>penyesuaian kegiatan</small></div>
-    </div>
-    <div class="dg-row rv" style="--d:.2;--c:#18364B">
-      <div class="dg-lk"><b>1</b>Fasilitasi investasi → PMA/PMDN meningkat</div>
-      <div class="dg-c" style="--b:#FBF4E2"><strong style="color:#7A5700">Fasilitasi investasi berjalan, realisasi PMA/PMDN tetap rendah.</strong>Periksa kesiapan proyek, minat investor, sisa kendala lahan dan perizinan, serta kesiapan infrastruktur.</div>
-      <div class="dg-c" style="--b:#E8EEF7">Investor berminat; kendala lahan, perizinan, dan infrastruktur dapat diselesaikan.</div>
-      <div class="dg-c" style="--b:#FBE5E3">Proyek berhenti di tahap minat; realisasi tertunda karena lahan atau infrastruktur.</div>
-      <div class="dg-c" style="--b:#E1F3F1"><div>Prioritaskan lahan <em>clean</em> dan <em>clear</em>; perizinan terpadu; sinkronkan infrastruktur dengan lokasi proyek.</div></div>
-    </div>
-    <div class="dg-row rv" style="--d:.3;--c:#A9790F">
-      <div class="dg-lk"><b>2</b>Pelatihan &amp; penempatan → TPT menurun</div>
-      <div class="dg-c" style="--b:#FBF4E2"><strong style="color:#7A5700">Pelatihan berjalan, TPT tetap tinggi.</strong>Periksa kesesuaian kompetensi dengan lowongan, jumlah lulusan yang ditempatkan, dan asal pekerja yang direkrut.</div>
-      <div class="dg-c" style="--b:#E8EEF7">Kurikulum sesuai kebutuhan industri; industri mau merekrut lulusan lokal.</div>
-      <div class="dg-c" style="--b:#FBE5E3">Lulusan tidak terserap; industri mendatangkan pekerja dari luar daerah.</div>
-      <div class="dg-c" style="--b:#E1F3F1">Kurikulum disusun bersama industri; kesepakatan rekrutmen lokal; pemagangan berujung penempatan.</div>
-    </div>
-    <div class="dg-row rv" style="--d:.4;--c:#2F7A66">
-      <div class="dg-lk"><b>3</b>Investasi, teknologi &amp; tenaga kerja → PDRB per kapita tumbuh</div>
-      <div class="dg-c" style="--b:#FBF4E2"><strong style="color:#7A5700">PMA/PMDN naik dan TPT turun, PDRB per kapita belum tumbuh.</strong>Periksa pemanfaatan teknologi dan mesin baru, kapasitas produksi, dan apakah investasinya padat modal.</div>
-      <div class="dg-c" style="--b:#E8EEF7">Teknologi dan mesin baru benar-benar dipakai dan menaikkan produktivitas; investasi menyerap tenaga kerja lokal.</div>
-      <div class="dg-c" style="--b:#FBE5E3">Teknologi tidak termanfaatkan; investasi padat modal sehingga dampaknya ke PDRB per kapita kecil.</div>
-      <div class="dg-c" style="--b:#E1F3F1">Dampingi pemanfaatan teknologi; kaitkan pengadaan mesin dengan pelatihan operator; utamakan investasi yang menyerap tenaga kerja.</div>
-    </div>
-    <div class="dg-row rv" style="--d:.5;--c:#5B7FB0">
-      <div class="dg-lk"><b>4</b>PDRB per kapita tumbuh → ketimpangan menurun</div>
-      <div class="dg-c" style="--b:#FBF4E2"><strong style="color:#7A5700">PDRB per kapita tumbuh, ketimpangan belum turun.</strong>Periksa apakah pertumbuhan terpusat di daerah yang sudah maju dan nilai tambah bocor keluar daerah.</div>
-      <div class="dg-c" style="--b:#E8EEF7">Kabupaten/kota ber-PDRB per kapita rendah dapat tumbuh lebih cepat; nilai tambah dinikmati ekonomi lokal.</div>
-      <div class="dg-c" style="--b:#FBE5E3">Pertumbuhan terpusat di daerah maju; industri tidak terhubung dengan ekonomi lokal; ketimpangan melebar.</div>
-      <div class="dg-c" style="--b:#E1F3F1">Target sebaran investasi per kabupaten/kota; keterkaitan dengan UMKM dan pemasok lokal; pantau Indeks Williamson.</div>
-    </div>
+  <div class="dx-list">
+    <div class="dx-row rv" style="--d:0.15;--c:#18364B"><b>1</b><div><h3>Fasilitasi investasi berjalan, realisasi PMA/PMDN tetap rendah.</h3><p>Periksa kesiapan proyek, minat investor, sisa kendala lahan dan perizinan, serta kesiapan infrastruktur.</p></div></div>
+    <div class="dx-row rv" style="--d:0.30;--c:#A9790F"><b>2</b><div><h3>Pelatihan berjalan, TPT tetap tinggi.</h3><p>Periksa kesesuaian kompetensi dengan lowongan, jumlah lulusan yang ditempatkan, dan asal pekerja yang direkrut.</p></div></div>
+    <div class="dx-row rv" style="--d:0.45;--c:#2F7A66"><b>3</b><div><h3>PMA/PMDN naik dan TPT turun, PDRB per kapita belum tumbuh.</h3><p>Periksa pemanfaatan teknologi dan mesin baru, kapasitas produksi, dan apakah investasinya padat modal.</p></div></div>
+    <div class="dx-row rv" style="--d:0.60;--c:#5B7FB0"><b>4</b><div><h3>PDRB per kapita tumbuh, ketimpangan belum turun.</h3><p>Periksa apakah pertumbuhan terpusat di daerah yang sudah maju dan nilai tambah bocor keluar daerah.</p></div></div>
   </div>
+  <div class="foot"><span class="src">Disparitas Ekonomi Maluku Utara 2026</span><span class="pn"></span></div>
+</section>
+
+<!-- 07d TOC: ASUMSI, RISIKO, RESPONS -->
+<section class="s light" data-title="ToC: Asumsi, Risiko, dan Respons">
+  <div class="kick">Theory of Change</div>
+  <h2 style="max-width:1680px;font-size:50px">Asumsi, Risiko, dan Respons</h2>
+  <table class="dx-t">
+    <colgroup><col style="width:330px"><col><col><col></colgroup>
+    <thead><tr><th class="h0">Sambungan</th><th class="h1">Asumsi<small>(syarat agar berjalan)</small></th><th class="h2">Risiko<small>(jika asumsi tidak terpenuhi)</small></th><th class="h3">Respons<small>(penyesuaian kegiatan)</small></th></tr></thead>
+    <tbody>
+      <tr class="rv" style="--d:0.20"><td class="s0">1. Fasilitasi investasi → PMA/PMDN meningkat</td><td class="s1">Investor berminat; kendala lahan, perizinan, dan infrastruktur dapat diselesaikan.</td><td class="s2">Proyek berhenti di tahap minat; realisasi tertunda karena lahan atau infrastruktur.</td><td class="s3">Prioritaskan lahan <em>clean</em> dan <em>clear</em>; perizinan terpadu; sinkronkan infrastruktur dengan lokasi proyek.</td></tr>
+      <tr class="rv" style="--d:0.32"><td class="s0">2. Pelatihan &amp; penempatan → TPT menurun</td><td class="s1">Kurikulum sesuai kebutuhan industri; industri mau merekrut lulusan lokal.</td><td class="s2">Lulusan tidak terserap; industri mendatangkan pekerja dari luar daerah.</td><td class="s3">Kurikulum disusun bersama industri; kesepakatan rekrutmen lokal; pemagangan berujung penempatan.</td></tr>
+      <tr class="rv" style="--d:0.44"><td class="s0">3. Investasi, teknologi &amp; tenaga kerja → PDRB per kapita tumbuh</td><td class="s1">Teknologi dan mesin baru benar-benar dipakai dan menaikkan produktivitas; investasi menyerap tenaga kerja lokal.</td><td class="s2">Teknologi tidak termanfaatkan; investasi padat modal sehingga dampaknya ke PDRB per kapita kecil.</td><td class="s3">Dampingi pemanfaatan teknologi; kaitkan pengadaan mesin dengan pelatihan operator; utamakan investasi yang menyerap tenaga kerja.</td></tr>
+      <tr class="rv" style="--d:0.56"><td class="s0">4. PDRB per kapita tumbuh → ketimpangan menurun</td><td class="s1">Kabupaten/kota ber-PDRB per kapita rendah dapat tumbuh lebih cepat; nilai tambah dinikmati ekonomi lokal.</td><td class="s2">Pertumbuhan terpusat di daerah maju; industri tidak terhubung dengan ekonomi lokal; ketimpangan melebar.</td><td class="s3">Target sebaran investasi per kabupaten/kota; keterkaitan dengan UMKM dan pemasok lokal; pantau Indeks Williamson.</td></tr>
+    </tbody>
+  </table>
   <div class="foot"><span class="src">Disparitas Ekonomi Maluku Utara 2026</span><span class="pn"></span></div>
 </section>
 
@@ -1418,7 +1425,6 @@ body.sum #nav{opacity:1}
       <h3>Pindai kode QR atau buka tautan berikut</h3>
       <p>Materi, data, dan dokumen pendukung presentasi Disparitas Ekonomi Antarwilayah di Provinsi Maluku Utara dapat diakses melalui tautan resmi Bappenas.</p>
       <a class="qr-link" href="https://link.bappenas.go.id/DDPP-UI3-A4" target="_blank" rel="noopener">link.bappenas.go.id/DDPP-UI3-A4</a>
-      <div class="qr-steps"><div><b>1</b>Arahkan kamera ponsel ke kode QR</div><div><b>2</b>Ketuk tautan yang muncul</div><div><b>3</b>Akses materi pendukung</div></div>
     </div>
   </div>
   <div class="foot"><span class="src"></span><span class="pn"></span></div>
@@ -1427,7 +1433,7 @@ body.sum #nav{opacity:1}
 </div>
 
 <div id="toc"><h4>DAFTAR ISI</h4><div id="toclist"></div></div>
-<div id="rotHint"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10v4"/></svg><span>Putar ponsel ke posisi mendatar (landscape) agar slide terbaca jelas. Geser kiri/kanan untuk berpindah slide.</span><button id="rotOk">Tutup</button></div>
+<div id="rotHint"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10v4"/></svg><span>Untuk tampilan terbaik, gunakan layar penuh dan posisi mendatar.</span><button id="rotGo">Layar penuh</button><button id="rotOk">Tutup</button></div>
 <div id="nav">
   <button id="bPrev">◀</button><span id="cnt">1 / 17</span><button id="bNext">▶</button>
   <button id="bToc">Daftar isi<span class="kb"> (T)</span></button><button id="bSum">Ringkasan<span class="kb"> (O)</span></button><button id="bFull">Layar penuh<span class="kb"> (F)</span></button>
@@ -2166,11 +2172,12 @@ $$('#toclist a').forEach(a => a.onclick = () => {
   mSvg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
   mSvg.setAttribute('class', 'idn-malut');
   svg.parentNode.appendChild(mSvg);
-  const SC = Math.min(1680 / IM.w, 720 / IM.h), OFFY = (720 - IM.h * SC) / 2;
+  const IDNH = svg.parentNode.clientHeight || 770;
+  const SC = Math.min(1680 / IM.w, IDNH / IM.h), OFFY = (IDNH - IM.h * SC) / 2;
   const X0 = (mb.x + mb.width / 2) * SC, Y0 = OFFY + (mb.y + mb.height / 2) * SC;
   const ZOOM = Math.min(6, 600 / (mb.height * SC));
   const bw = VB[2] * SC * ZOOM, bh = VB[3] * SC * ZOOM;
-  const XF = 380, YF = 360, TX = XF - X0, TY = YF - Y0;
+  const XF = 380, YF = 425, TX = XF - X0, TY = YF - Y0;
   svg.style.transformOrigin = X0 + 'px ' + Y0 + 'px';
   Object.assign(mSvg.style, { left: (XF - bw / 2) + 'px', top: (YF - bh / 2) + 'px', width: bw + 'px', height: bh + 'px', transform: 'translate(' + (-TX) + 'px,' + (-TY) + 'px) scale(' + (1 / ZOOM) + ')' });
   const kabEl = {};
@@ -2277,11 +2284,11 @@ $$('#toclist a').forEach(a => a.onclick = () => {
   const CO = {
     6: { l: 110, t: 100, ph: 'jetty1', pos: '50% 60%', ic: 'factory', t1: 'Hilirisasi nikel mendorong lonjakan', d: 'Industri pengolahan tumbuh 120,5% pada 2021, saat pabrik pengolahan nikel mulai beroperasi.' },
     7: { l: 110, t: 100, ph: 'weda', pos: '50% 60%', ic: 'drill', t1: 'Pusatnya di Halmahera Tengah', d: 'Kawasan industri Weda Bay: laju 161,85% pada 2021 dan 102,4% pada 2022, jauh di atas daerah lain.' },
-    8: { l: 212, t: 88, w: 470, pw: 150, ph: 'obi', pos: '50% 50%', ic: 'chart', t1: 'Dari pertanian ke tambang dan smelter', d: 'Pertanian turun dari 24,8% ke 9,6%, industri pengolahan naik dari 5,1% ke 42,0%.' }
+    8: { l: 190, t: 140, w: 470, pw: 150, h: 176, sm: 1, ph: 'obi', pos: '50% 50%', ic: 'chart', t1: 'Dari pertanian ke tambang dan smelter', d: 'Pertanian turun dari 24,8% ke 9,6%, industri pengolahan naik dari 5,1% ke 42,0%.' }
   };
   function calloutHTML(n) {
     const c = CO[n]; if (!c) return '';
-    return '<div class="co-card" style="left:' + c.l + 'px;top:' + c.t + 'px;width:' + (c.w || 560) + 'px;height:190px"><div class="co-ph" style="width:' + (c.pw || 210) + 'px"><img class="ph-fill" src="assets/photos/' + c.ph + '.jpg" alt="" style="object-position:' + c.pos + '"><span class="cp">' + creditTxt(c.ph) + '</span></div><div class="co-tx"><div class="co-ic"><svg viewBox="0 0 24 24">' + CO_IC[c.ic] + '</svg></div><div class="co-t">' + c.t1 + '</div><div class="co-d">' + c.d + '</div></div></div>';
+    return '<div class="co-card' + (c.sm ? ' co-sm' : '') + '" style="left:' + c.l + 'px;top:' + c.t + 'px;width:' + (c.w || 560) + 'px;height:' + (c.h || 190) + 'px"><div class="co-ph" style="width:' + (c.pw || 210) + 'px"><img class="ph-fill" src="assets/photos/' + c.ph + '.jpg" alt="" style="object-position:' + c.pos + '"><span class="cp">' + creditTxt(c.ph) + '</span></div><div class="co-tx"><div class="co-ic"><svg viewBox="0 0 24 24">' + CO_IC[c.ic] + '</svg></div><div class="co-t">' + c.t1 + '</div><div class="co-d">' + c.d + '</div></div></div>';
   }
   function tourHTML() {
     const ph = [['morotai', 'Pulau Morotai', '50% 60%'], ['tidore', 'Tidore', '50% 55%'], ['ternate', 'Ternate', '58% 55%']];
@@ -2565,7 +2572,7 @@ $$('#toclist a').forEach(a => a.onclick = () => {
     const PCOL = '#E9A23B', NCOL = '#4F86C6', TCOL = '#1F4E63';
     const KC = { "8202": '#0F766E', "8204": '#2A9D8F', "8205": '#4C8DAE', "8208": '#6C7FD1', "8206": '#8E7CC3', "8203": '#B07CC6', "8271": '#D17AAE', "8201": '#E0788E', "8207": '#E99575', "8272": '#EFB36A' };
     const grad = (id, x1, x2, c1, c2) => '<linearGradient id="' + id + '" gradientUnits="userSpaceOnUse" x1="' + x1 + '" y1="0" x2="' + x2 + '" y2="0"><stop offset="0" stop-color="' + c1 + '"/><stop offset="1" stop-color="' + c2 + '"/></linearGradient>';
-    const GAP = 14, MINH = 14, LTOP = 70, LH = 520, NW = 22, XT = 290, XM = 750, XK = 1210;
+    const GAP = 16, MINH = 19, LTOP = 84, LH = 625, NW = 22, XT = 280, XM = 735, XK = 1185;
     // skala: kab/kota kecil diberi tinggi minimum agar tetap terlihat
     let K = (LH - GAP * (N - 1)) / TOT;
     for (let i = 0; i < 8; i++) {
@@ -2597,20 +2604,20 @@ $$('#toclist a').forEach(a => a.onclick = () => {
       if (ph > 0.05) flows2 += band(XM + NW, cP, cP + ph, XK, yK, yK + ph, 'url(#gp' + c + ')', .7);
       if (nh > 0.05) flows2 += band(XM + NW, cN, cN + nh, XK, yK + ph, yK + h, 'url(#gn' + c + ')', .7);
       cP += ph; cN += nh;
-      labK += '<text x="' + (XK + NW + 14) + '" y="' + (yK + h / 2 + 6).toFixed(1) + '" font-size="19" font-weight="700" fill="#17283B">' + kabName(c) + '  <tspan font-weight="500" fill="#1F4E63">Rp' + f2(INVT[c]) + ' T</tspan></text>';
+      labK += '<text x="' + (XK + NW + 14) + '" y="' + (yK + h / 2 + 7).toFixed(1) + '" font-size="22" font-weight="700" fill="#17283B">' + kabName(c) + '  <tspan font-weight="500" fill="#1F4E63">Rp' + f2(INVT[c]) + ' T</tspan></text>';
       yK += h + GAP;
     });
     const pct = v => (v / TOT * 100).toFixed(1).replace('.', ',') + '%';
-    labM += '<text x="' + (XM + NW / 2) + '" y="' + (MTOP - 36) + '" text-anchor="middle" font-size="19" font-weight="700" fill="#17283B">Industri pengolahan</text>';
+    labM += '<text x="' + (XM + NW / 2) + '" y="' + (MTOP - 36) + '" text-anchor="middle" font-size="22" font-weight="700" fill="#17283B">Industri pengolahan</text>';
     labM += '<text x="' + (XM + NW / 2) + '" y="' + (MTOP - 14) + '" text-anchor="middle" font-size="18" fill="#1F4E63">Rp' + f2(PTOTr) + ' T (' + pct(PTOTr) + ')</text>';
-    labM += '<text x="' + (XM + NW / 2) + '" y="' + (MTOP + TT + 32) + '" text-anchor="middle" font-size="19" font-weight="700" fill="#17283B">Non-pengolahan</text>';
+    labM += '<text x="' + (XM + NW / 2) + '" y="' + (MTOP + TT + 32) + '" text-anchor="middle" font-size="22" font-weight="700" fill="#17283B">Non-pengolahan</text>';
     labM += '<text x="' + (XM + NW / 2) + '" y="' + (MTOP + TT + 54) + '" text-anchor="middle" font-size="18" fill="#1F4E63">Rp' + f2(NTOTr) + ' T (' + pct(NTOTr) + ')</text>';
-    labT += '<text x="' + (XT - 16) + '" y="' + (MTOP + TT / 2 - 8) + '" text-anchor="end" font-size="19" font-weight="700" fill="#17283B">Total seluruh</text>';
-    labT += '<text x="' + (XT - 16) + '" y="' + (MTOP + TT / 2 + 14) + '" text-anchor="end" font-size="19" font-weight="700" fill="#17283B">komoditas</text>';
-    labT += '<text x="' + (XT - 16) + '" y="' + (MTOP + TT / 2 + 48) + '" text-anchor="end" font-size="30" font-weight="800" fill="#1F4E63">Rp' + f2(TOT) + ' T</text>';
-    const hd = (x, t, anchor) => '<text x="' + x + '" y="' + (LTOP - 34) + '" text-anchor="' + anchor + '" font-size="15" font-weight="700" letter-spacing="2" fill="#C99A38">' + t + '</text>';
+    labT += '<text x="' + (XT - 16) + '" y="' + (MTOP + TT / 2 - 8) + '" text-anchor="end" font-size="22" font-weight="700" fill="#17283B">Total seluruh</text>';
+    labT += '<text x="' + (XT - 16) + '" y="' + (MTOP + TT / 2 + 14) + '" text-anchor="end" font-size="22" font-weight="700" fill="#17283B">komoditas</text>';
+    labT += '<text x="' + (XT - 16) + '" y="' + (MTOP + TT / 2 + 48) + '" text-anchor="end" font-size="36" font-weight="800" fill="#1F4E63">Rp' + f2(TOT) + ' T</text>';
+    const hd = (x, t, anchor) => '<text x="' + x + '" y="' + (LTOP - 34) + '" text-anchor="' + anchor + '" font-size="18" font-weight="700" letter-spacing="2" fill="#C99A38">' + t + '</text>';
     const hT = hd(XT, 'TOTAL', 'start'), hM = hd(XM + NW / 2, 'JENIS INVESTASI', 'middle'), hK = hd(XK, 'KAB/KOTA', 'start');
-    sank.innerHTML = '<svg viewBox="0 0 1680 660" style="width:100%;height:660px;display:block;font-family:var(--font)"><defs>' + defs + '<clipPath id="skc1"><rect x="0" y="0" width="1680" height="660" style="animation:skw 1.1s ease-out .3s both"/></clipPath><clipPath id="skc2"><rect x="0" y="0" width="1680" height="660" style="animation:skw 1.1s ease-out 1.3s both"/></clipPath></defs>' +
+    sank.innerHTML = '<svg viewBox="0 0 1680 770" style="width:100%;height:770px;display:block;font-family:var(--font)"><defs>' + defs + '<clipPath id="skc1"><rect x="0" y="0" width="1680" height="770" style="animation:skw 1.1s ease-out .3s both"/></clipPath><clipPath id="skc2"><rect x="0" y="0" width="1680" height="770" style="animation:skw 1.1s ease-out 1.3s both"/></clipPath></defs>' +
       '<g class="sk-f">' + hT + nodesT + labT + '</g>' +
       '<g clip-path="url(#skc1)">' + flows1 + '</g>' +
       '<g class="sk-f" style="animation-delay:.9s">' + hM + nodesM + labM + '</g>' +
@@ -2628,7 +2635,7 @@ $$('#toclist a').forEach(a => a.onclick = () => {
     }
   }
   // marimekko: tata letak per tahun, lalu interpolasi antar tahun agar perpindahan halus
-  const VW = 1600, VBASE = 520, VTOP = 30, VBW = 1580, VX0 = 10, VMAXPK = 700;
+  const VW = 1600, VBASE = 600, VTOP = 30, VBW = 1580, VX0 = 10, VMAXPK = 700;
   function variLayout(yi) {
     const codes = Object.keys(PK).map(Number).filter(c => c > 0).sort((p, q) => PK[q][yi] - PK[p][yi]);
     const tot = codes.reduce((t, c) => t + POP[c][yi], 0);
@@ -2642,15 +2649,15 @@ $$('#toclist a').forEach(a => a.onclick = () => {
   }
   function variRender(L0, L1, t, yi) {
     const lp = (p, q) => p + (q - p) * t;
-    let o = '<svg viewBox="0 0 ' + VW + ' 580" style="width:100%;height:auto;display:block;font-family:var(--font)">';
+    let o = '<svg viewBox="0 0 ' + VW + ' 655" style="width:100%;height:auto;display:block;font-family:var(--font)">';
     o += '<line x1="' + VX0 + '" x2="' + (VX0 + VBW) + '" y1="' + VBASE + '" y2="' + VBASE + '" stroke="#CBD4DB"/>';
     for (const c in L1) {
       const A = L0[c], B = L1[c];
       const x = lp(A.x, B.x), w = lp(A.w, B.w), h = lp(A.h, B.h), pk = lp(A.pk, B.pk), sh = lp(A.sh, B.sh), hi = +c === 8202;
       o += '<rect x="' + x.toFixed(1) + '" y="' + (VBASE - h).toFixed(1) + '" width="' + w.toFixed(1) + '" height="' + h.toFixed(1) + '" rx="3" fill="' + (hi ? '#D9703C' : '#2B647A') + '"/>';
-      o += '<text x="' + (x + w / 2).toFixed(1) + '" y="' + (VBASE - h - 6).toFixed(1) + '" text-anchor="middle" font-size="17" font-weight="800" fill="#17283B">' + f1(pk) + '</text>';
-      o += '<text x="' + (x + w / 2).toFixed(1) + '" y="' + (VBASE + 24) + '" text-anchor="middle" font-size="16" font-weight="700" fill="#17283B">' + SHORT[c] + '</text>';
-      o += '<text x="' + (x + w / 2).toFixed(1) + '" y="' + (VBASE + 46) + '" text-anchor="middle" font-size="16" font-weight="600" fill="#5A6B7B">' + sh.toFixed(1).replace('.', ',') + '%</text>';
+      o += '<text x="' + (x + w / 2).toFixed(1) + '" y="' + (VBASE - h - 8).toFixed(1) + '" text-anchor="middle" font-size="21" font-weight="800" fill="#17283B">' + f1(pk) + '</text>';
+      o += '<text x="' + (x + w / 2).toFixed(1) + '" y="' + (VBASE + 27) + '" text-anchor="middle" font-size="19" font-weight="700" fill="#17283B">' + SHORT[c] + '</text>';
+      o += '<text x="' + (x + w / 2).toFixed(1) + '" y="' + (VBASE + 51) + '" text-anchor="middle" font-size="18" font-weight="600" fill="#5A6B7B">' + sh.toFixed(1).replace('.', ',') + '%</text>';
     }
     return '<div class="idn-bhead">PDRB per kapita ADHB, ' + YRS[yi] + ' (juta Rp)</div>' + o + '</svg><div class="idn-bnote">Lebar kolom = porsi penduduk kab/kota. Tinggi kolom memakai skala akar kuadrat agar daerah dengan nilai kecil tetap terlihat.</div>';
   }
@@ -2941,7 +2948,10 @@ $('#bNext').onclick = () => go(cur + 1);
 $('#bToc').onclick = () => $('#toc').classList.toggle('open');
 $('#bSum').onclick = () => toggleSum(!document.body.classList.contains('sum'));
 
-const full = () => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+const full = () => {
+  if (document.fullscreenElement) { try { screen.orientation && screen.orientation.unlock && screen.orientation.unlock(); } catch (e) {} return document.exitFullscreen(); }
+  return goLandscape();
+};
 $('#bFull').onclick = full;
 const rotOk = $('#rotOk'); if (rotOk) rotOk.onclick = () => $('#rotHint').classList.add('hide');
 
@@ -3005,7 +3015,7 @@ $$('.mm').forEach(el => {
     'Research Gap': 0,
     'Analisis Data: Indeks Williamson dan Klassen Tipologi': 1, 'Hasil Analisis Tipologi Klassen Maluku Utara 2024': 1,
     'Problem Tree Analysis': 2, 'Logical Framework Analysis': 2, 'Kerangka Kerja Logis': 2, 'Matriks Prioritas Masalah': 2,
-    'ToC: Bagaimana Ketimpangan Ekonomi Dapat Menurun?': 2, 'ToC: Ketika Ketimpangan Ekonomi Belum Menurun': 2,
+    'ToC: Bagaimana Ketimpangan Ekonomi Dapat Menurun?': 2, 'ToC: Ketika Ketimpangan Ekonomi Belum Menurun': 2, 'ToC: Asumsi, Risiko, dan Respons': 2,
     'Rekomendasi Alternatif': 3, 'Ilustrasi Pilihan Intervensi dan Matriks Integrasi': 3,
     'Tiga Jalur Strategis': 3, 'Matriks Integrasi Perencanaan': 3, 'Theory of Change': 3,
     'Tahapan Implementasi Intervensi': 3, 'Indikator Keberhasilan': 3, 'Tindak Lanjut': 3
@@ -3030,6 +3040,7 @@ $$('.mm').forEach(el => {
       'Indikator Keberhasilan': ['left', 'sunset', '60% 40%'],
       'ToC: Bagaimana Ketimpangan Ekonomi Dapat Menurun?': ['right', 'kapal', '50% 55%'],
       'ToC: Ketika Ketimpangan Ekonomi Belum Menurun': ['left', 'pelabuhan', '50% 55%'],
+      'ToC: Asumsi, Risiko, dan Respons': ['right', 'jetty3', '50% 56%'],
       'Matriks Prioritas Masalah': ['right', 'nelayan', '50% 50%'],
       'Rekomendasi Alternatif': ['right', 'kedondong', '50% 55%'],
       'Ilustrasi Pilihan Intervensi dan Matriks Integrasi': ['right', 'cengkih', '50% 55%']
@@ -3054,6 +3065,21 @@ $$('.mm').forEach(el => {
 if (location.search.includes('nt')) {
   document.head.insertAdjacentHTML('beforeend', '<style>*{transition:none!important;animation-duration:0s!important}</style>');
 }
+
+/* ponsel: layar penuh + kunci landscape (hanya bisa dipicu oleh sentuhan pengguna) */
+const isTouch = matchMedia('(hover:none) and (pointer:coarse)').matches;
+async function goLandscape() {
+  try { if (!document.fullscreenElement && document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen(); } catch (e) {}
+  try { if (screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch (e) {}
+  const h = $('#rotHint'); if (h) h.classList.add('hide');
+}
+const rotGo = $('#rotGo'); if (rotGo) rotGo.onclick = goLandscape;
+if (isTouch) {
+  const once = () => { removeEventListener('touchend', once); goLandscape(); };
+  addEventListener('touchend', once, { passive: true });
+}
+addEventListener('orientationchange', () => { fit(); });
+document.addEventListener('fullscreenchange', () => { fit(); if (!document.fullscreenElement) { try { screen.orientation && screen.orientation.unlock && screen.orientation.unlock(); } catch (e) {} } });
 
 fit();
 go((parseInt(location.hash.slice(1)) || 1) - 1);
